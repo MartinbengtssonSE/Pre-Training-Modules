@@ -1,0 +1,20 @@
+For setting up a new Project:
+
+1: add folder
+2: add project folder in Atom
+3: Right-click the folder and select "git bash here"
+4: You can now add files either thru git bash by "touch" command, in Atom or directly in the folder
+
+"$ git init" to initilalize
+
+set global user name and email:
+git config --global user.name 'Name here'
+git config --global user.email 'Email here'
+
+Important commands in git bash:
+"git status" to check what is in the staging area
+"git rm --cached 'file name'"" to remove a file from the staging area
+"git add ." to add all files to the staging area
+"git commit" to commit changes for the files to the project file
+
+How to connect to Github Repository
