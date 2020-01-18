@@ -1,0 +1,13 @@
+# Exercise 2
+
+# Types of Variables
+# Numerical (quantative): values that can be averaged or modified
+# Categorical (qualitative): values that are distinct, such as hardcoded value for gender
+
+# Continuous numerical: infinite number of values within a given range
+# Discrete numerical: specific set of numeric values that can be counted or enumerated
+# Ordinal categorical: finite number of values within a given range, often measured (such as please, very pleased etc. in a test)
+
+library(dplyr)
+library(openintro)
+data(email50)

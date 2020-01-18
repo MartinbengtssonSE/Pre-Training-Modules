@@ -1,0 +1,11 @@
+# Basic functions
+# Basic sum function works by just typing in what + what without other commands
+# Since this chapter was very straight forward it only contains notes
+
+# You can store a variable in this way by typing x <- 11 for an example where x
+# can identify anything from an X to a part of a data table
+
+# decimal values like 4.5 are called numerics
+# natural numbers like 4 are called integers
+# Boolean values (TRUE or FALSE) are called logical
+# text (or string) values are called characters

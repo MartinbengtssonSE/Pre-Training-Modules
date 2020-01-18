@@ -1,0 +1,24 @@
+All The courses that there are notes and exercises from.
+
+V  Introduction to Data
+V	 Introduction to R
+	Cleaning Data in R
+	Importing Data in R (1)
+	Importing Data in R (2)
+	Intermediate R
+	Intermediate-r-practice
+
+  Optional Other Courses:
+  Other Datacamp courses: https://www.datacamp.com/search?q=R&tab=undefined
+  Free course on Udemy: https://www.udemy.com/r-basics/
+  Online practice exercises, e.g.: http://r-tutorials.com/r-exercises-71-80-loops-loop-loop-repeat-loop-ifelse-statements-r/ or https://www.w3resource.com
+
+  Optional Readings/vids:
+  Follow RStudio on LinkedIn for following updates / cool talks on data science with R: https://www.linkedin.com/company/rstudio-inc/
+  TED vids related to data https://www.ted.com/playlists/56/making_sense_of_too_much_data
+
+  Optional Intro to Time-Series Forecasting:
+  https://towardsdatascience.com/almost-everything-you-need-to-know-about-time-series-860241bdc578
+  https://blog.algorithmia.com/introduction-to-time-series/
+  https://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/
+  https://www.datascience.com/blog/introduction-to-forecasting-with-arima-in-r-learn-data-science-tutorials

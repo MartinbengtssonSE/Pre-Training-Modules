@@ -1,0 +1,16 @@
+# Visualization of numerical data with ggplot2
+
+#scatterplot of mat vs science scores
+library(ggplot2)
+library(dplyr)
+library(openintro)
+
+ggplot(data = hsb2, aes(x = science, y = math)) +
+    geom_point()
+
+# With color to identify a third variable in a scatterplot by utilizing the color = variable function
+# You can also force R to recognize it as a categorical variable by utilizing the factor() function here
+# by inserting it at color = factor(spam))) if the variable requires this
+
+ggplot(data = hsb2, aes(x = science, y = math, color = prog)) +
+    geom_point()

@@ -1,0 +1,38 @@
+# Exercise 3
+
+# R often stores categorical data as factors
+# Important to statistical modeling
+
+# Number of students in public and private schools in hsb2
+# Syntax refresher: name of datatable $ name of column
+
+# Initial Load
+# library(dplyr)
+# library(openintro)
+# data(hsb2)
+
+
+
+# Number of students in public and private schools in hsb2
+# table(hsb2$schtyp)
+
+# Filter for public schools
+# hsb2_public <- hsb2 %>%
+# filter(schtyp == "public")
+
+# The Pipe operator is known as %>%
+# Is equal to is explained by ==
+
+# Drop unused levels (this is for an example a bucket you no longer use)
+# hsb2_public$schtyp <- droplevels(hsb2_public$schtyp)
+
+# glimpse(hsb2_public)
+
+# Example:
+
+email50_big <- email50 %>%
+    filter(number == "big")
+table(email50_big$number)
+
+email50_big$number_dropped <- droplevels(email50_big$number)
+table(email50_big$number_dropped)

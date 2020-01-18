@@ -1,0 +1,19 @@
+# Exercise 4 Discretize a Variables
+
+# Calculate average reading score and show the value
+
+library(dplyr)
+library(openintro)
+data(hsb2)
+
+# Calculate average reading score and show the value
+mean(hsb2$read)
+
+# Calculate average reading score and store as avg_read. If you wrap it in () it will also print value as well as store it
+avg_read <- mean(hsb2$read)
+
+# Create new variable: read_cat
+# Ifelse works with 1. the logical test 2 if true 3 if false
+hsb2 <- hsb2 %>%
+    mutate(read_cat = ifelse(read < avg_read,
+        "below average", "at or above average"))

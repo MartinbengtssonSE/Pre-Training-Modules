@@ -1,0 +1,16 @@
+# Exercise 1
+
+# Load package
+library(openintro)
+
+# Load Data
+data(hsb2)
+
+# View the structure of the data
+str(hsb2)
+
+# Load package
+library(dplyr)
+
+# View the structure of the data method 2
+glimpse (hsb2)
