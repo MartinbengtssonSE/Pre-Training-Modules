@@ -17,4 +17,15 @@ Important commands in git bash:
 "git add ." to add all files to the staging area
 "git commit" to commit changes for the files to the project file
 
-How to connect to Github Repository
+You can also create a file called .gitignore and add exceptions in this file by typing
+in file names in this new file. These files listed in .gitignore will always be ignored when committing
+
+How to connect to Github Repository:
+1: Create new repository in github
+1A:   Make sure you do not create it with readme. It'll give you error message when you upload since
+      what you will upload does not match what already exists
+2: git remote add origin PATHHERE
+3: git push -u origin master
+
+Now when you update this file in the future you only need to save in Atom and go through the steps of saving and committing.
+Once that is done you can just do the git push -m 'change name' and it will be pushed to the repository.
