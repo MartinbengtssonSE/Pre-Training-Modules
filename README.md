@@ -1,4 +1,4 @@
-# R-Modules
+# R Pre Training Courses & Exercises
 This repository contains all the pre-training modules knowledge for R that were listed
 in the PowerPoint Presentation.
 
