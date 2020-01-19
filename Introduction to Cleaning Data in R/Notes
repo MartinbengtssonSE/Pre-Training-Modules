@@ -1,0 +1,26 @@
+# Exercises
+
+# Show the first and last 6 rows of the dataset and show a condensed summary
+# You can also modify these by saying head(dataset, n = 100) to show more rows
+
+head (dataset)
+Tail (dataset)
+str (dataset)
+
+# To load a file into R
+Name <- read.filetype("nameoffile")
+
+# view its class and dimensions and column header names and a summary of your dataset such as
+# important information that R can produce from your dataset
+# not recommended to use print()
+
+str(dataset)
+glimpse(dataset)
+class(dataset)
+dim(dataset)
+names(dataset)
+summary(dataset)
+print()
+
+hist(dataset$column)
+plot(dataset$column, dataset$column)

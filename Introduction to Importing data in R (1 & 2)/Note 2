@@ -1,0 +1,40 @@
+# Relational databases importing
+
+# Database Management systems DBMS such as MySQL, PostgreSQL, SQLite are common
+# Oracle Database, Microsoft SQL Server are some proprietary names
+# SQL = Structured Query Language
+# Different packages depending on database in R
+
+# Connect to a SQL database
+
+con <- dbConnect(RMySQL : :MySQL(), # Construct SQL driver
+                dbname = "company"
+                host = "courses.csrrinzqubik.us-east-1.rds.amazonaws.com",
+                port = 3306,
+                user = "student",
+                password = "datacamp")
+
+# the first argument specifies the driver that you will use to connect to the Server
+# then you need to specify the information about the server
+# con is a DBIConnection object
+# by establishing the connection you can then type its name to see the server connection
+
+# Once connected you can find out what is in the database by utilizing the following string
+# it will show what tables are in the database
+
+dbListTables(name given)
+
+# You can then read one of the tables by using the following command
+
+dbReadTable("given database name", "name of table")
+dbDisconnect("given database name")
+
+# Make a vector of the table names by:
+
+tables <- dbListTables(given name to database, "table")
+str(tables)
+
+# To import all tables you can use the lapply function! For an example:
+
+table_names <- dbListTables(con)
+tables <- lapply(table_names, dbReadTable, conn = Server Connection)

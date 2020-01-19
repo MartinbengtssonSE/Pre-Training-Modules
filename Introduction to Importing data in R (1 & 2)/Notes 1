@@ -1,0 +1,57 @@
+# Notes and Exercises
+
+# Flat files, excel, databases and web and statistical software
+# How to load a .csv file
+
+read.csv("filename.extension, stringsAsFactors = FALSE ")
+path <- file.path("~", "datasets", "states.csv")
+read.csv(path, stringsAsFactors = FALSE)
+
+# stringsAsFactors is important as it chooses to import the data as either
+# strings or factors depending on FALSE or TRUE statement
+# It isn't necessary to specify stringsAsFactors from the beginning of the load, we can do that
+# once we are sure whether the statement should be TRUE or FALSE
+
+Name <- read.csv("name of file", stringsAsFactors = FALSE)
+str(name)
+
+# As an example below we are importing a file about swimming pools and checking the structure
+
+pools <- read.csv("swimming_pools.csv", stringsAsFactors = FALSE)
+str(pools)
+
+# Tab-delimited file
+
+read.delim("states.txt", stringsAsFactors = FALSE)
+read.table()
+
+read.table("states.txt",
+            header = TRUE,
+            sep = "/",
+            stringsAsFactors = FALSE)
+
+# Header here specifies for read.table that the first row is headers if set to TRUE
+# sep is short for separator and with "" you can specify how the data is separated in the file
+# stringsAsFactors works the same as in read.csv
+# "\t" equals tab as seperator
+
+# Example below with hotdogs file
+
+path <- file.path("data", "hotdogs.txt")
+hotdogs <- read.table(path,
+                      sep = "\t",
+                      col.names = c("type", "calories", "sodium"))
+
+
+# vector type example in a dataset, to find min/max for an example
+
+Name <- dataset[which.min(dataset$column), ]
+Name <- dataset[which.max(dataset$column), ]
+
+
+# You can also set the column classes by yourself as well, for an example:
+
+Name <- read.delim("name.txt",
+                  header = FALSE,
+                  col.names = c("name", "name", "name"),
+                  colClasses = c("factor", "NULL", "numeric"))
